@@ -1,7 +1,7 @@
 {
 	"id": "madr",
 	"name": "MADR Author",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "1.1.0",
 	"description": "Author Markdown Any Decision Records directly in your vault.",
 	"author": "Tijs van Erp",
