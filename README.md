@@ -22,12 +22,6 @@ Author MADR-format architecture decision records as regular notes in your vault,
 
    The panel updates automatically as you edit the open note or switch to a different one, and shows a prompt instead of a checklist when the active note isn't a recognized ADR.
 
-## Before submitting a release
-
-- [ ] Confirm the plugin `id` in `manifest.json` (`madr`) is still unique against the current [obsidian-releases community-plugins list](https://github.com/obsidianmd/obsidian-releases/blob/master/community-plugins.json).
-- [ ] Confirm the git tag and the GitHub release title match `manifest.json`'s `version` field exactly, with no `v` prefix.
-- [ ] Confirm `minAppVersion` in `manifest.json` matches the actual minimum Obsidian API surface used by the current code.
-
 ## License
 
 0-BSD. See [LICENSE](LICENSE).
