@@ -1,6 +1,6 @@
 {
 	"name": "madr",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Author MADR (Markdown Any Decision Records) documents from within your vault.",
 	"main": "main.js",
 	"type": "module",
