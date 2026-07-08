@@ -8,11 +8,6 @@ Author [MADR](https://adr.github.io/madr/) (Markdown Architectural Decision Reco
 
 Author MADR-format architecture decision records as regular notes in your vault, with a live checklist that flags missing sections and leftover template placeholders. The plugin makes no network calls of any kind — all reading and writing happens locally against files in your vault.
 
-## Installing
-
-1. Copy `main.js`, `styles.css`, and `manifest.json` into `<vault>/.obsidian/plugins/madr/`.
-2. Reload Obsidian (or use the "Reload app without saving" command) and enable "MADR Author" under Settings → Community plugins.
-
 ## Using it
 
 1. **Configure a directory.** Open Settings → MADR Author and add one or more vault folders to hold your decision records. You can also set a default MADR version (3.0 or 4.0) and default values for status, decision-makers, consulted, and informed — these prefill every new record.
@@ -26,18 +21,6 @@ Author MADR-format architecture decision records as regular notes in your vault,
    - A live checklist for whichever record is currently active, split into a **Metadata** group (status, date, decision-makers, consulted, informed), a **Content** group (required sections present, at least one considered option, no leftover placeholder text, no near-empty sections), and a **Markdown style** group (formatting issues found by [markdownlint](https://github.com/DavidAnson/markdownlint), using MADR's own rule set — a single pass entry when the note is clean, or one failing entry per distinct rule violated, each naming the affected line numbers). Each item shows a pass (✓) or fail (✗) mark.
 
    The panel updates automatically as you edit the open note or switch to a different one, and shows a prompt instead of a checklist when the active note isn't a recognized ADR.
-
-## Developing
-
-```bash
-npm install
-npm run dev     # rebuilds on change
-npm run build   # type-checks and produces a production build
-npm test        # runs the unit test suite
-npm run lint    # runs eslint, including Obsidian-specific plugin rules
-```
-
-Requires Node.js 18 or later.
 
 ## Before submitting a release
 
