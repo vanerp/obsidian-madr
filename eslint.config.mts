@@ -13,6 +13,8 @@ export default defineConfig(
 		'package.json',
 		'package-lock.json',
 		'tsconfig.json',
+		'vitest.config.ts',
+		'tests',
 	]),
 	{
 		languageOptions: {
@@ -29,4 +31,9 @@ export default defineConfig(
 		},
 	},
 	...obsidianmd.configs.recommended,
+	{
+		rules: {
+			'obsidianmd/ui/sentence-case': ['warn', { enforceCamelCaseLower: true, acronyms: ['MADR', 'ADR'] }],
+		},
+	},
 );
